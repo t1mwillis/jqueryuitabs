@@ -87,7 +87,7 @@ array_insert($GLOBALS['TL_DCA']['tl_content']['fields'], 0, array(
 		}),
 		'sql'			=> "varchar(128) NOT NULL default ''",
 	),
-	'addImage' => array
+	'juiTabImg' => array
 		(
 			'label'                   => &$GLOBALS['TL_LANG']['tl_content']['juiTabImg'],
 			'exclude'                 => true,
