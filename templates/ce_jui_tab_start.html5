@@ -2,5 +2,26 @@
 <section class="<?= $this->class ?> ce_tabs block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style?>"<?php endif; ?>>
 	<ul class="nav invisible"<?php if ($this->juiTabShowDropdown): ?> data-dropdown="<?= specialchars($this->juiTabDropdownLabel) ?>"<?php endif; ?>></ul>
 	<div id="<?= $this->alias ?>" class="panel <?= $this->alias ?>">
+	
+	 <?php if ($this->juiTabImg): ?>
+	    <figure class="image_container<?= $this->floatClass ?>"<?php if ($this->margin): ?> style="<?= $this->margin ?>"<?php endif; ?>>
+
+	      <?php if ($this->href): ?>
+		<a href="<?= $this->href ?>"<?php if ($this->linkTitle): ?> title="<?= $this->linkTitle ?>"<?php endif; ?><?= $this->attributes ?>>
+	      <?php endif; ?>
+
+	      <?php $this->insert('picture_default', $this->picture); ?>
+
+	      <?php if ($this->href): ?>
+		</a>
+	      <?php endif; ?>
+
+	      <?php if ($this->caption): ?>
+		<figcaption class="caption"><?= $this->caption ?></figcaption>
+	      <?php endif; ?>
+
+	    </figure>
+	  <?php endif; ?>
+	  
 		<<?= $this->hl ?> class="headline"><?= $this->headline ?></<?= $this->hl ?>>
 		
