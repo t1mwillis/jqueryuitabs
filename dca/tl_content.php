@@ -89,7 +89,7 @@ array_insert($GLOBALS['TL_DCA']['tl_content']['fields'], 0, array(
 	),
 	'addImage' => array
 		(
-			'label'                   => &$GLOBALS['TL_LANG']['tl_content']['addImage'],
+			'label'                   => &$GLOBALS['TL_LANG']['tl_content']['juiTabImg'],
 			'exclude'                 => true,
 			'inputType'               => 'checkbox',
 			'eval'                    => array('submitOnChange'=>true),
