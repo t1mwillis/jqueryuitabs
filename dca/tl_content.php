@@ -55,7 +55,7 @@ array_insert($GLOBALS['TL_DCA']['tl_content']['palettes'], 0, array(
  * Subpalettes
  */
 $GLOBALS['TL_DCA']['tl_content']['subpalettes']['juiTabShowDropdown'] = 'juiTabDropdownLabel';
-$GLOBALS['TL_DCA']['tl_content']['subpalettes']['juiaddImage'] = 'singleSRC,alt,title,size,imagemargin,imageUrl,fullsize,caption,floating';
+$GLOBALS['TL_DCA']['tl_content']['subpalettes']['juiTabImg'] = 'singleSRC,alt,title,size,imagemargin,imageUrl,fullsize,caption,floating';
 
 
 /*
